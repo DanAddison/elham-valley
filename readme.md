@@ -1,15 +1,15 @@
 <p align="center">
   <a href="">
-    <img alt="" src="wp-content/themes/dan-develops-wp/screenshot.png" width="900" />
+    <img alt="" src="wp-content/themes/dan-develops-wp/screenshot.jpg" width="700" />
   </a>
 </p>
 <h1 align="center">
-  Dan Develops WP
+  Elham Valley Line Trust
 </h1>
 
 ## Description
 
-A really awesome starting point for creating bespoke WordPress websites.
+A website project donated to The Elham Valley Line Trust which was formed in 1984 to preserve railway history, countryside crafts and to provide educational facilities.
 
 ## Build tooling
 
@@ -28,7 +28,3 @@ Coming soon
 
 Gulp process is currently using node v11.6.0 (npm v6.9.0)
 
-
-## Credits
-
-- Initially based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
