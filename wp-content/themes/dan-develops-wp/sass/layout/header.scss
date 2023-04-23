@@ -1,5 +1,5 @@
 .site-header {
-  background-color: $canvas-dark;
+  background-color: $primary;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
 }
@@ -28,7 +28,7 @@
     text-align: center;
 
     a {
-      color: $white;
+      color: $secondary;
       text-decoration: none;
     }
   }
@@ -46,6 +46,6 @@ button.menu-button {
   .hamburger-inner,
   .hamburger-inner::before,
   .hamburger-inner::after {
-    background-color: $white;
+    background-color: $secondary;
   }
 }
