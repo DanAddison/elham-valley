@@ -13,8 +13,7 @@
 
 .site-branding {
   align-self: flex-end;
-  max-width: 300px;
-  margin-bottom: -1em;
+  max-width: 400px;
   padding-right: $spacing;
 
   img {
@@ -22,10 +21,9 @@
   }
 
   .site-title {
-    // display: none;
     margin: 0;
-    font-size: 1.5rem;
-    text-align: center;
+    font-size: 1.75rem;
+	font-weight: 800;
 
     a {
       color: $secondary;
@@ -35,17 +33,62 @@
 }
 
 .main-nav {
-  display: block;
+	display: none;
+
+	&.active {
+		display: block;
+	}
+
+	@include mq($bp-menu) {
+		display: block;
+	}
 }
 
-button.menu-button {
-  text-align: right;
-  margin-bottom: -8px;
-  font-size: 0.8em;
+.header__burger {
+	z-index: 10;
+	position: relative;
+	user-select: none;
+	height: 30px;
+	width: 30px;
+	cursor: pointer;
 
-  .hamburger-inner,
-  .hamburger-inner::before,
-  .hamburger-inner::after {
-    background-color: $secondary;
-  }
+	@include mq($bp-menu) {
+		display: none;
+	}
+
+	span {
+		width: 30px;
+		height: 4px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		border-radius: 4px;
+		transform: translate(-50%, -50%);
+		background-color: $secondary;
+		transition: all 0.3s ease-in-out;
+
+		&:nth-of-type(2) {
+			top: calc(50% - 9px);
+		}
+		&:nth-of-type(3) {
+			top: calc(50% + 9px);
+		}
+	}
+
+	&.active {
+
+		span {
+			&:nth-of-type(1) {
+				display: none;
+			}
+			&:nth-of-type(2) {
+				top: 50%;
+				transform: translate(-50%, 0%) rotate(45deg);
+			}
+			&:nth-of-type(3) {
+				top: 50%;
+				transform: translate(-50%, 0%) rotate(-45deg);
+			}
+		}
+	}
 }

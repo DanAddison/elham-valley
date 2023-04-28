@@ -14,9 +14,6 @@ add_action('wp_enqueue_scripts', function() {
 	    wp_enqueue_style('tiny-slider', get_theme_file_uri('/assets/libraries/tiny-slider/tiny-slider.min.css'));
     }
 
-	// Google fonts
-	wp_enqueue_style( 'da-fonts', 'https://fonts.googleapis.com/css?family=Montserrat:300|Raleway:400,400i' );
-
 	// Cookie consent styles provided by https://www.osano.com/cookieconsent/download/
 	wp_enqueue_style( 'cookies-styles', 'https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css' );
 

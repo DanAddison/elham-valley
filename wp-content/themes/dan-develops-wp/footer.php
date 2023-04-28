@@ -15,7 +15,6 @@
 		<?php endif; ?>
 
 		<?php if( have_rows('social_media', 'option') ): ?>
-			<h2>Find us on social</h2>
 			<ul class="footer__social">
 			<?php while( have_rows('social_media', 'option') ): the_row(); 
 				$platform = get_sub_field('platform');
@@ -27,15 +26,13 @@
 			</ul>
 		<?php endif; ?>
 
-		<div class="sub-footer">
-
-			<p class="copyright">&copy; <?php echo date('Y'); ?> <?php the_field('copyright', 'option'); ?></p>
-
-			<p class="credit">Site: <a href="https://danaddison.uk">Dan Addison</a></p>
-
-		</div><!-- .sub-footer -->	
-
+		
 	</div><!-- .container -->
+
+	<div class="sub-footer">
+		<p class="copyright">&copy; <?php echo date('Y'); ?> <?php the_field('copyright', 'option'); ?></p>
+		<p class="credit">Site: <a href="https://danaddison.uk">Dan Addison</a></p>
+	</div><!-- .sub-footer -->	
 
 </footer><!-- #site-footer -->
 

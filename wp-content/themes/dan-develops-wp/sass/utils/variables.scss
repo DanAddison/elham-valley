@@ -9,7 +9,7 @@ $bp-5: 1300px;
 $bp-6: 1500px;
 $bp-7: 1700px;
 
-$bp-menu: $bp-3;
+$bp-menu: $bp-4;
 
 // spacing
 $spacing: 2em;
@@ -17,9 +17,9 @@ $spacing: 2em;
 /*------------------------------------*\
     Font Variables
 \*------------------------------------*/
-$copy-face: "raleway", sans-serif;
-$headings-face: "Montserrat", "Lucida Grande", sans-serif;
-$headings-weight: normal;
+$copy-face: 'Inter', sans-serif;
+$headings-face: 'Merriweather', serif;
+$headings-weight: 700;
 
 /*------------------------------------*\
     Colours - some dan-develops-wp defaults
