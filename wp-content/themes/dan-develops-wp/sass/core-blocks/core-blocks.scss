@@ -21,7 +21,11 @@ p.has-large-font-size {
 ## Columns
 *********************************************************/
 .wp-block-columns {
-  width: 95%;
+	margin-top: 40px;
+	@include center-block;
+	width: 95%;
+	max-width: $bp-5;
+
   .wp-block-column {
     margin-bottom: 2em;
   }

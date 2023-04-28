@@ -14,7 +14,7 @@ main.main-content > * {
   }
 }
 
-main.main-content > *:not(.alignwide):not(.alignfull) {
+main.main-content > *:not(.alignwide):not(.alignfull):not(.wp-block-columns) {
   @include center-block;
   width: 95%;
   max-width: $bp-3;

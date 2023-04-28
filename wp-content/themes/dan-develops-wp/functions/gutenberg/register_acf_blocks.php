@@ -79,7 +79,7 @@ function da_acf_block_render_callback( $block ) {
 	// convert name ("acf/example") into path friendly slug ("example")
 	$slug = str_replace('acf/', '', $block['name']);
 	
-	if( file_exists( get_theme_file_path('blocks-acf/'.$slug.'/'.$slug.'.php') ) ) {
-		include( get_theme_file_path('blocks-acf/'.$slug.'/'.$slug.'.php') );
+	if( file_exists( get_theme_file_path('blocks/'.$slug.'/'.$slug.'.php') ) ) {
+		include( get_theme_file_path('blocks/'.$slug.'/'.$slug.'.php') );
 	}
 }
